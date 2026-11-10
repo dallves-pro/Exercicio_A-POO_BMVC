@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Banco BMVC - Interface</title>
+</head>
+<body>
+    <h2>Painel do Banco - Autenticado como: {{usuario}}</h2>
+    <hr>
+    <h3>Minhas Transações (Read)</h3>
+    <ul>
+        % for t in transacoes:
+            <li><strong>ID {{t.id}}</strong> | {{t.descricao}}: R$ {{t.valor}}</li>
+        % end
+        % if not transacoes:
+            <li>Nenhuma transação cadastrada.</li>
+        % end
+    </ul>
+    <br>
+    <p><i>Atenção: Para incluir, atualizar ou deletar novos itens, utilize os comandos cURL.</i></p>
+</body>
+</html>
