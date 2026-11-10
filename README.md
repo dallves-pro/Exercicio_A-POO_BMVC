@@ -3,7 +3,7 @@
 ## Funcionalidades
 1. **Recurso `Portal`**: Um painel de entrada exige a autenticação do usuário (integrada ao `user_account`), valida as credenciais e fornece acesso seguro (via cookies assinados).
 2. **Recurso `Banco`**: Área privada onde os usuários autenticados podem visualizar as suas movimentações financeiras via interface web (Read).
-3. **API RESTful Integrada**: Endpoints para executar o CRUD completo nas transações, desenvolvidos para aceitação de operações via terminal (cURL).
+3. **API RESTful integrada**: Endpoints para executar o CRUD completo nas transações, desenvolvidos para aceitação de operações via terminal (cURL).
 
 ## Arquitetura
 * **Models**: `user_account.py` (lógica de usuários) e `transacao.py` (representação e regras dos lançamentos financeiros).
